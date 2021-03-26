@@ -1,0 +1,360 @@
+@import "mixin";
+
+@media screen and (max-width: 1300px) {
+  .slider-partner {
+    .slick-dots {
+      display: flex!important;
+      justify-content: center;
+      margin-top: 30px;
+
+      li {
+        width: 20px;
+        height: 20px;
+        margin: 0 15px;
+        border: 1px solid @dark-red;
+        border-radius: 50%;
+
+        button {
+          font-size: 0;
+        }
+      }
+
+      .slick-active {
+         background: @dark-red;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .mobile-menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  header {
+    .grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .menu {
+      display: none;
+      position: absolute;
+      background: #fff;
+      z-index: 3;
+      width: 100%;
+      left: 0;
+      top: 0;
+      text-align: center;
+      padding: 120px 0px 50px;
+
+      li {
+        padding: 10px 25px;
+      }
+
+      a {
+        color: @dark-red;
+      }
+    }
+  }
+
+  .certificates {
+    .grid {
+      grid-gap: 30px;
+      grid-template-columns: 50% 45%;
+    }
+  }
+
+  .courses {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 19px;
+    }
+
+    .grid-block {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+      }
+    }
+  }
+
+  .grid-bigger {
+    grid-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  br {
+    display: none;
+  }
+
+  .courses {
+    .special-h5 {
+      font-size: 25px;
+    }
+
+    .grid-block {
+      .grid {
+        padding: 15px 15px;
+      }
+    }
+
+    h5 {
+      font-size: 17px;
+      font-weight: 600;
+    }
+  }
+
+  .team {
+    .text {
+      margin: 30px 20px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .courses {
+    .grid-block {
+      .grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+      }
+    }
+
+    .flex-btn {
+      justify-content: center;
+    }
+  }
+
+  .grid-big {
+    grid-template-columns: 39% 15% 39%;
+  }
+
+  .certificates {
+    .grid {
+      grid-template-columns: 40% 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .grid-big {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-bigger {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px 20px;
+  }
+
+  .lyre {
+    display: none;
+  }
+
+  .certificates {
+    .grid {
+      grid-template-columns: 1fr;
+      grid-gap: 0;
+    }
+    
+    .text {
+      text-align: center;
+    }
+
+    p {
+      margin: 30px auto;
+    }
+  }
+
+  .team {
+    .picture {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  header {
+    .grid {
+      padding-top: 40px;
+    }
+
+    .menu {
+      height: 100%;
+    }
+  }
+
+  .courses {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+
+    h5 {
+      font-size: 30px;
+    }
+
+    .special-h5 {
+      font-size: 20px;
+    }
+
+    .grid-block {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+
+  .grid-big {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  header {
+    .title {
+      font-size: 40px;
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+
+    h3 {
+      font-size: 25px;
+    }
+
+    .form {
+      form {
+        max-width: 100%;
+        margin: 0;
+      }
+    }
+  }
+
+  .mobile-menu {
+    label {
+      top: -5px;
+    }
+  }
+
+  .mobile-menu.active label div:nth-child(2),
+  .mobile-menu.active label div:nth-child(3){
+    width: 30px;
+  }
+
+  .grid-bigger {
+    grid-template-columns: 1fr;
+  }
+
+  .courses {
+    .grid-block {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  .certificates {
+    h3 {
+      line-height: 45px;
+    }
+
+    .section {
+      padding: 45px 15px;
+    }
+
+    .btn {
+      padding: 22px 50px;
+    }
+  }
+
+  .register {
+    h2 {
+      font-size: 40px;
+    }
+
+    h5 {
+      font-size: 20px;
+    }
+  }
+
+  footer {
+    .grid-social {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 0;
+    }
+    p, a {
+      font-size: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h2 {
+    font-size: 35px;
+  }
+
+  header {
+    h1 {
+      font-size: 30px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    .form {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  h2 {
+    font-size: 34px;
+  }
+
+  header {
+    .title {
+      font-size: 35px;
+    }
+
+    .btn {
+      padding: 22px 0px;
+    }
+  }
+
+  .slider-partner {
+    .slick-dots {
+      li {
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+      }
+    }
+  }
+
+  .register {
+    h2 {
+      font-size: 35px;
+    }
+  }
+
+  footer {
+    .grid-social {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .mobile-menu {
+    label {
+      right: 0;
+    }
+  }
+}
